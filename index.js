@@ -33,3 +33,11 @@ function showCommits(el) {
   displayError()
 })
 }
+
+function displayCommits(response)
+ {
+   let commitsList = response.map(commit => {
+     return displayCommit(commit)
+   }).join('')
+   return '<ul>$(commitsList)</ul>'
+ }
