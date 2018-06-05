@@ -45,3 +45,7 @@ function displayCommits(response)
  function displayCommit(commit) {
    return `<li><p>SHA: ${commit.sha}</p><p>Commit message: ${commit.commit.message}</p></li>`
  }
+
+ function displayError() {
+    $("#errors").html("I'm sorry, there's been an error. Please try again.");
+}
