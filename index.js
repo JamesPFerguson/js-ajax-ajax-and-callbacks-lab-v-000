@@ -41,3 +41,7 @@ function displayCommits(response)
    }).join('')
    return '<ul>$(commitsList)</ul>'
  }
+
+ function displayCommit(commit) {
+   return `<li><p>SHA: ${commit.sha}</p><p>Commit message: ${commit.commit.message}</p></li>`
+ }
